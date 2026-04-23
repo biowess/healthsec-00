@@ -1,0 +1,209 @@
+Start timestamp: 2026-04-22 20:54:37 +0100 (AIDE 0.19.2)
+AIDE found differences between database and filesystem!!
+
+Summary:
+  Total number of entries:	156621
+  Added entries:		14
+  Removed entries:		0
+  Changed entries:		17
+
+---------------------------------------------------
+Added entries:
+---------------------------------------------------
+
+f+++++++++++++++++: /etc/audit/audit.rules.prev
+f+++++++++++++++++: /etc/audit/rules.d/phase0.rules
+f+++++++++++++++++: /etc/nftables.conf
+f+++++++++++++++++: /etc/ssh/ssh_host_ecdsa_key
+f+++++++++++++++++: /etc/ssh/ssh_host_ecdsa_key.pub
+f+++++++++++++++++: /etc/ssh/ssh_host_ed25519_key
+f+++++++++++++++++: /etc/ssh/ssh_host_ed25519_key.pub
+f+++++++++++++++++: /etc/ssh/ssh_host_rsa_key
+f+++++++++++++++++: /etc/ssh/ssh_host_rsa_key.pub
+f+++++++++++++++++: /etc/ssh/sshd_config.d/10-phase0-hardening.conf
+l+++++++++++++++++: /etc/systemd/system/multi-user.target.wants/nftables.service
+l+++++++++++++++++: /etc/systemd/system/multi-user.target.wants/sshd.service
+f+++++++++++++++++: /var/log/journal/acfe3227c9384038aa3578b3c9c530d2/user-1001.journal
+f+++++++++++++++++: /var/log/sssd/sssd_kcm.log
+
+---------------------------------------------------
+Changed entries:
+---------------------------------------------------
+
+f > ... mc..H...  : /etc/audit/audit.rules
+d > ... mc.. ...  : /etc/audit/rules.d
+f > ... mci.H...  : /etc/group
+f > ... mc..H...  : /etc/group-
+f > ... mci.H...  : /etc/gshadow
+f > ... mc..H...  : /etc/gshadow-
+f > ... mci.H...  : /etc/passwd
+f > ... mc..H...  : /etc/passwd-
+f > ... mci.H...  : /etc/shadow
+f < ... .c..H...  : /etc/shadow-
+d > ... mc.. ...  : /etc/ssh/sshd_config.d
+f   ...   i  . .  : /etc/subgid
+f   ...   i  . .  : /etc/subuid
+f = ... mc......  : /usr/lib/sysimage/rpm/rpmdb.sqlite-shm
+f = ... .c......  : /usr/lib/sysimage/rpm/rpmdb.sqlite-wal
+f > ... mc..H...  : /var/log/lastlog
+f = ...   .. ...E : /var/log/lynis-report.dat
+
+---------------------------------------------------
+Detailed information about changes:
+---------------------------------------------------
+
+File: /etc/audit/audit.rules
+ Size      : 84                               | 183
+ Mtime     : 2025-10-23 05:02:48 +0100        | 2026-04-22 20:18:24 +0100
+ Ctime     : 2026-04-22 19:00:31 +0100        | 2026-04-22 20:18:24 +0100
+ SHA256    : LQcgcHhUQn9LFbSfqZzO6WAPYbzG4I7u | 8igTZQBvlhTILfiaqwb8mdIY229eKTFT
+             zqPo9szN4TU=                     | Nc0Q/53v30c=
+ SHA512    : ne/3u+FCbqQs8IgT1KsMvFeC1GkEse7z | STkY7Dof4NDbhU8Y2dSoVG1Hdb62eQ9f
+             r2WP4uZ1hW9ztUn717XGIEGEqraIltQk | KcyaiXoZVaa0Mtbaz8t+SmCqa8SUKUhd
+             mrCaPbNp/Ftyz0pBIw8sWQ==         | ME+uJkLXUV8ZYtyK71lW3Q==
+
+Directory: /etc/audit/rules.d
+ Size      : 22                               | 46
+ Mtime     : 2025-10-23 05:02:48 +0100        | 2026-04-22 20:18:03 +0100
+ Ctime     : 2026-04-22 19:03:34 +0100        | 2026-04-22 20:18:03 +0100
+
+File: /etc/group
+ Size      : 906                              | 932
+ Mtime     : 2026-04-22 19:07:20 +0100        | 2026-04-22 20:25:40 +0100
+ Ctime     : 2026-04-22 19:07:20 +0100        | 2026-04-22 20:25:40 +0100
+ Inode     : 159398                           | 166070
+ SHA256    : yhkio81SZBIiorDMZUazIob88GUYObPZ | fcU3WY8GvEfSo2juVNU/nbSOp0cbp+4g
+             tHxfo9pMFxk=                     | 0fMfSCJhn14=
+ SHA512    : XOpJsHfDXl0BsNlLDK2b9tn/n+/1AT4K | YQN2uSGjUMvU3uHb0Q8+83m+Eh2Cu9Fy
+             tdz4Mh/TV3xkMk+ZIG9F8gwooZD8N5nX | gSjUHFJfuGfvklACSzWKweKvxvwq8QBV
+             NOO+ECtd6Y6PQGAbNdgEfA==         | zWc41cxZ1fHx6ZQIiJ1ePA==
+
+File: /etc/group-
+ Size      : 891                              | 906
+ Mtime     : 2025-10-23 05:03:02 +0100        | 2026-04-22 19:07:20 +0100
+ Ctime     : 2026-04-22 19:07:20 +0100        | 2026-04-22 20:25:40 +0100
+ SHA256    : JnhX686z62m2rthkJjo5zyeXWVz6yB34 | yhkio81SZBIiorDMZUazIob88GUYObPZ
+             5T7sipPZ1Mw=                     | tHxfo9pMFxk=
+ SHA512    : 73urAf/DNpCc7tYVJtYFAa3jivuuYd9E | XOpJsHfDXl0BsNlLDK2b9tn/n+/1AT4K
+             waX2YknYlxmCKpLsQRo17xSRZAHfxy+O | tdz4Mh/TV3xkMk+ZIG9F8gwooZD8N5nX
+             A5NruvbGNHo4RFHfcrDhIg==         | NOO+ECtd6Y6PQGAbNdgEfA==
+
+File: /etc/gshadow
+ Size      : 811                              | 833
+ Mtime     : 2026-04-22 19:07:20 +0100        | 2026-04-22 20:25:40 +0100
+ Ctime     : 2026-04-22 19:07:20 +0100        | 2026-04-22 20:25:40 +0100
+ Inode     : 159399                           | 166071
+ SHA256    : erLbvXdB/cMmA093H71pfqOp7po5wVkD | FxvjnmavcLJJp3KYCC+O+JS4Zap+tV+g
+             7ODWyjSVOKk=                     | LDzI8mdLcIc=
+ SHA512    : nSy9jZ4LXN19WXQ5UmbIQK/LUU4uBiXG | qTe/AZY1lE1PLzUCEXlh8KTntMYlomnO
+             VxJIm8aEwu3oUhCK1bSQUZwcPxUceVkq | nhz3KKjisE7/3ETdUixAS20ioG4S5a0J
+             dCb7nndzuwbHt4fAaE6Igw==         | Uxjz2GOW9kd/tpQ2XjYoxw==
+
+File: /etc/gshadow-
+ Size      : 800                              | 811
+ Mtime     : 2025-10-23 05:03:02 +0100        | 2026-04-22 19:07:20 +0100
+ Ctime     : 2026-04-22 19:07:20 +0100        | 2026-04-22 20:25:40 +0100
+ SHA256    : mgSx1SZBUadGghGP8Eg33rEc0sWfRpSr | erLbvXdB/cMmA093H71pfqOp7po5wVkD
+             LRwLTHJKQ2Y=                     | 7ODWyjSVOKk=
+ SHA512    : h+/iIpegZNo2OHwQKxhO8A4U+xH7SvTS | nSy9jZ4LXN19WXQ5UmbIQK/LUU4uBiXG
+             tUYfQJUCKGYif1vBI1g16pV5SNExDaYz | VxJIm8aEwu3oUhCK1bSQUZwcPxUceVkq
+             1+8kRZM00xdU2JEWmB8lRA==         | dCb7nndzuwbHt4fAaE6Igw==
+
+File: /etc/passwd
+ Size      : 2629                             | 2676
+ Mtime     : 2026-04-22 19:07:20 +0100        | 2026-04-22 20:25:40 +0100
+ Ctime     : 2026-04-22 19:07:20 +0100        | 2026-04-22 20:25:40 +0100
+ Inode     : 159396                           | 166068
+ SHA256    : hbeRC0hFV19EHVyqR3/cyVevmKxIBWQn | JEjASpiSgtvGWc475XP3iO6KSj9Gd5ci
+             E3xOQaBziik=                     | o+WjDY4v+PQ=
+ SHA512    : 4fyj6ViIQ9exq0EDz8nRRRx/MkHfujPT | Eq6rVdFbxgkQoWG9tPX3iUVrybQJlJAH
+             b1nKAWpwKGdiaATnbqbZfLY6V0Z3sui+ | b9Qfp+baEAtaSDqt9g152+Kge6l2J36f
+             ZncuneaoNzMx0yii9O6cDA==         | AARIeK3OJCmkXqmiWL7KJQ==
+
+File: /etc/passwd-
+ Size      : 2574                             | 2629
+ Mtime     : 2025-10-23 05:04:34 +0100        | 2026-04-22 19:07:20 +0100
+ Ctime     : 2026-04-22 19:07:20 +0100        | 2026-04-22 20:25:40 +0100
+ SHA256    : CKZ5eHomVkNRX1QCJSX/OFD0qWDUI3O/ | hbeRC0hFV19EHVyqR3/cyVevmKxIBWQn
+             0eZoP64AGPQ=                     | E3xOQaBziik=
+ SHA512    : XMUSc6KTBu23yInZbiLOqIGKC/YfMZzf | 4fyj6ViIQ9exq0EDz8nRRRx/MkHfujPT
+             NwLwQjc/F/Dgh28EJgzSG4ORu2iE2PUt | b1nKAWpwKGdiaATnbqbZfLY6V0Z3sui+
+             uzhRbMy0CQ+srY4rBPJbSA==         | ZncuneaoNzMx0yii9O6cDA==
+
+File: /etc/shadow
+ Size      : 1058                             | 1160
+ Mtime     : 2026-04-22 19:07:21 +0100        | 2026-04-22 20:27:10 +0100
+ Ctime     : 2026-04-22 19:07:21 +0100        | 2026-04-22 20:27:10 +0100
+ Inode     : 159416                           | 166078
+ SHA256    : T5V40MfCa7Hdl8IZO5G5bh8knnybKlrA | 7HbMzApOcaE3GpAsNiJEQAoI3EpZh3r5
+             mcH6JRILkPg=                     | t6K37eITvLk=
+ SHA512    : qjkLX8rt9Yedrg00ZzljX9BkrNzWyuhS | eafwyPlmewyuij9hFFB1TyJ9emacXhjx
+             sT40g+N/Djjg7UaXvG/z4fZyTd6mY/nU | UZupVx0FJ4vuOwbUMIjbqR2lwkQ6f1Ff
+             quXgt9QxV+RbblLyQ6zMkg==         | 4bqZAIap3AUjUJ1UF8jZeQ==
+
+File: /etc/shadow-
+ Size      : 1063                             | 1058
+ Ctime     : 2026-04-22 19:07:21 +0100        | 2026-04-22 20:25:40 +0100
+ SHA256    : VSTOJz74+3WKoTi4KmdmEmp+soodiNjK | T5V40MfCa7Hdl8IZO5G5bh8knnybKlrA
+             UPAeXMYjnXY=                     | mcH6JRILkPg=
+ SHA512    : 4DnvPwCbJ92ONGx1nx2UXsFlwrNVL57Y | qjkLX8rt9Yedrg00ZzljX9BkrNzWyuhS
+             L06GcMPPoFX0jTmGJBQuZocJeYAdT/KT | sT40g+N/Djjg7UaXvG/z4fZyTd6mY/nU
+             RzRvZKFlF90x3YmJWSiLIA==         | quXgt9QxV+RbblLyQ6zMkg==
+
+Directory: /etc/ssh/sshd_config.d
+ Size      : 88                               | 136
+ Mtime     : 2025-10-23 05:02:59 +0100        | 2026-04-22 20:37:26 +0100
+ Ctime     : 2026-04-22 19:03:34 +0100        | 2026-04-22 20:37:26 +0100
+
+File: /etc/subgid
+ Inode     : 159403                           | 166073
+
+File: /etc/subuid
+ Inode     : 159401                           | 166072
+
+File: /usr/lib/sysimage/rpm/rpmdb.sqlite-shm
+ Mtime     : 2026-04-22 20:07:41 +0100        | 2026-04-22 20:49:18 +0100
+ Ctime     : 2026-04-22 20:07:41 +0100        | 2026-04-22 20:49:18 +0100
+
+File: /usr/lib/sysimage/rpm/rpmdb.sqlite-wal
+ Ctime     : 2026-04-22 20:08:57 +0100        | 2026-04-22 20:50:32 +0100
+
+File: /var/log/lastlog
+ Size      : 0                                | 292584
+ Mtime     : 2025-10-23 04:49:21 +0100        | 2026-04-22 20:40:56 +0100
+ Ctime     : 2026-04-22 19:11:16 +0100        | 2026-04-22 20:40:56 +0100
+ SHA256    : 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NM | mXTg1+k6boFuI+mEcX5OY6Ptr3KK3g9t
+             pJWZG3hSuFU=                     | vhI/AIPuM+g=
+ SHA512    : z4PhNX7vuL3xVChQ1m2AB9Yg5AULVxXc | xc0tjo4WaA6EaGeUlxbq8l1U5qno+aKu
+             g/SpIdNs6c5H0NE8XYXysP+DGNKHfuwv | Vmh8myb12GJz8FzwnC2Y7RZZJq5gav5A
+             Y7kxvUdBeoGlODJ6+SfaPg==         | PoES3cSX6ooD6lCjtPH7Ng==
+
+File: /var/log/lynis-report.dat
+ E2FSAttrs : ----------------------           | ---------------------m
+
+
+---------------------------------------------------
+The attributes of the (uncompressed) database(s):
+---------------------------------------------------
+
+/var/lib/aide/aide.db.gz
+ SHA256    : sXNX6eyIcINstI42GN2+8NNbsD2WhtB1
+             T1OmCV0q0Wk=
+ SHA512    : wWngA3Yd8YN3TCVQkuvT2GfCT6gMdi8D
+             tZRfTbxb5DTBikrwvJ6V3HMiU4xd7EsH
+             hMudgqKW0yHyCYlgGl/9hw==
+ STRIBOG256: YCqbVymzwdi4WgWcd3vEMNK5jhnY1VAE
+             J/nkrk64Kj0=
+ STRIBOG512: SVPP/30max9KMUbl84UowR1c1P/EQvIo
+             omrzyfMy/G2fkU/V6hQbggsJKtXkZa74
+             gNB6W0dZ6xZZIPYO8tBS1w==
+ SHA512/256: yprcD0uD4ALsxgldC3tE6TYcNg8XEtfq
+             NGASk+F+CB8=
+ SHA3-256  : xZqNO2rjzPUNp52SZEXpz7FlFREzqzpF
+             DqEtw3147Yc=
+ SHA3-512  : EiEn+IxUxCOqE1UEUVI+RAHS9rXo+szu
+             tMb8mWYLs7W24TP66JQD2suR4n+Y4mMu
+             aRWE5FzALlhHa2836HJyQQ==
+
+
+End timestamp: 2026-04-22 20:55:26 +0100 (run time: 0m 49s)

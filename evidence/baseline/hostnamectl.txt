@@ -1,0 +1,20 @@
+  Transient hostname: localhost-live
+     Static hostname: (unset)
+           Icon name: computer-vm
+             Chassis: vm 🖴
+          Machine ID: acfe3227c9384038aa3578b3c9c530d2
+             Boot ID: f357dfe05bd34ce4b26c91b381313f24
+        AF_VSOCK CID: 1
+      Virtualization: kvm
+    Operating System: Fedora Linux 43 (LXQt)
+         CPE OS Name: cpe:/o:fedoraproject:fedora:43
+      OS Support End: Wed 2026-12-02
+OS Support Remaining: 7month 1w 3d
+              Kernel: Linux 6.17.1-300.fc43.x86_64
+        Architecture: x86-64
+     Hardware Vendor: QEMU
+      Hardware Model: Standard PC _Q35 + ICH9, 2009_
+    Hardware Version: pc-q35-10.1
+    Firmware Version: 1.17.0-9.fc43
+       Firmware Date: Tue 2025-06-10
+        Firmware Age: 10month 1w 5d

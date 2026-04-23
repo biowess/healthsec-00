@@ -1,0 +1,75 @@
+● sshd.service - OpenSSH server daemon
+     Loaded: loaded (/usr/lib/systemd/system/sshd.service; enabled; preset: disabled)
+    Drop-In: /usr/lib/systemd/system/service.d
+             └─10-timeout-abort.conf
+     Active: active (running) since Wed 2026-04-22 20:37:38 CET; 7min ago
+ Invocation: 09ceff976d74486bba8c035fd2841fcd
+       Docs: man:sshd(8)
+             man:sshd_config(5)
+   Main PID: 32900 (sshd)
+      Tasks: 1 (limit: 4626)
+     Memory: 3.3M (peak: 5.1M)
+        CPU: 57ms
+     CGroup: /system.slice/sshd.service
+             └─32900 "sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups"
+
+Apr 22 20:37:38 localhost-live systemd[1]: Starting sshd.service - OpenSSH server daemon...
+Apr 22 20:37:38 localhost-live sshd[32900]: Server listening on 0.0.0.0 port 22.
+Apr 22 20:37:38 localhost-live systemd[1]: Started sshd.service - OpenSSH server daemon.
+Apr 22 20:37:38 localhost-live sshd[32900]: Server listening on :: port 22.
+Apr 22 20:39:55 localhost-live sshd-session[32937]: Connection closed by authenticating user medadmin 127.0.0.1 port 47968 [preauth]
+Apr 22 20:40:56 localhost-live sshd-session[33097]: Accepted publickey for medadmin from 127.0.0.1 port 52192 ssh2: ED25519 SHA256:gfcD098ny5h/cB/57PmxsLCAe6jCvgR7w9O/133Jcls
+Apr 22 20:40:56 localhost-live sshd-session[33097]: pam_unix(sshd:session): session opened for user medadmin(uid=1001) by medadmin(uid=0)
+
+● nftables.service - Netfilter Tables
+     Loaded: loaded (/usr/lib/systemd/system/nftables.service; enabled; preset: disabled)
+    Drop-In: /usr/lib/systemd/system/service.d
+             └─10-timeout-abort.conf
+     Active: active (exited) since Wed 2026-04-22 20:40:38 CET; 4min 40s ago
+ Invocation: d74847519ea54739928e1f8c5ca3ee8f
+       Docs: man:nft(8)
+    Process: 33074 ExecStart=/sbin/nft -f /etc/sysconfig/nftables.conf (code=exited, status=0/SUCCESS)
+   Main PID: 33074 (code=exited, status=0/SUCCESS)
+   Mem peak: 2.9M
+        CPU: 24ms
+
+Apr 22 20:40:38 localhost-live systemd[1]: Starting nftables.service - Netfilter Tables...
+Apr 22 20:40:38 localhost-live systemd[1]: Finished nftables.service - Netfilter Tables.
+
+● auditd.service - Security Audit Logging Service
+     Loaded: loaded (/usr/lib/systemd/system/auditd.service; enabled; preset: enabled)
+    Drop-In: /usr/lib/systemd/system/service.d
+             └─10-timeout-abort.conf
+     Active: active (running) since Wed 2026-04-22 19:11:16 CET; 1h 34min ago
+ Invocation: c0430863423347a28637bc5269b82b50
+       Docs: man:auditd(8)
+             https://github.com/linux-audit/audit-documentation
+   Main PID: 2217 (auditd)
+      Tasks: 4 (limit: 4626)
+     Memory: 2.9M (peak: 3.2M)
+        CPU: 88ms
+     CGroup: /system.slice/auditd.service
+             ├─2217 /usr/bin/auditd
+             └─2219 /usr/sbin/sedispatch
+
+Apr 22 19:11:16 fedora systemd[1]: Starting auditd.service - Security Audit Logging Service...
+Apr 22 19:11:16 fedora auditd[2217]: audit dispatcher initialized with q_depth=2000 and 1 active plugins
+Apr 22 19:11:16 fedora auditd[2217]: Init complete, auditd 4.1.1 listening for events (startup state enable)
+Apr 22 19:11:16 fedora systemd[1]: Started auditd.service - Security Audit Logging Service.
+
+● ehr-sim.service - Synthetic EHR Support Service
+     Loaded: loaded (/etc/systemd/system/ehr-sim.service; enabled; preset: disabled)
+    Drop-In: /usr/lib/systemd/system/service.d
+             └─10-timeout-abort.conf
+     Active: active (running) since Wed 2026-04-22 19:53:18 CET; 51min ago
+ Invocation: 49bb1e40b27543d7a459d17c381aaffa
+   Main PID: 5691 (python3)
+      Tasks: 1 (limit: 4626)
+     Memory: 11.7M (peak: 12.1M)
+        CPU: 588ms
+     CGroup: /system.slice/ehr-sim.service
+             └─5691 /usr/bin/python3 -m http.server 8080 --bind 127.0.0.1
+
+Apr 22 19:53:18 localhost-live systemd[1]: Started ehr-sim.service - Synthetic EHR Support Service.
+Apr 22 20:33:20 localhost-live systemd[1]: /etc/systemd/system/ehr-sim.service:10: Special user nobody configured, this is not safe!
+Apr 22 20:40:38 localhost-live systemd[1]: /etc/systemd/system/ehr-sim.service:10: Special user nobody configured, this is not safe!

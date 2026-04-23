@@ -1,0 +1,14 @@
+[Unit]
+Description=Synthetic EHR Support Service
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/srv/ehr-sim
+ExecStart=/usr/bin/python3 -m http.server 8080 --bind 127.0.0.1
+Restart=on-failure
+User=nobody
+Group=nobody
+
+[Install]
+WantedBy=multi-user.target

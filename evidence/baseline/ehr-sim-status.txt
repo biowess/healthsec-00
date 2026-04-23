@@ -1,0 +1,14 @@
+● ehr-sim.service - Synthetic EHR Support Service
+     Loaded: loaded (/etc/systemd/system/ehr-sim.service; enabled; preset: disabled)
+    Drop-In: /usr/lib/systemd/system/service.d
+             └─10-timeout-abort.conf
+     Active: active (running) since Wed 2026-04-22 19:53:18 CET; 1min 0s ago
+ Invocation: 49bb1e40b27543d7a459d17c381aaffa
+   Main PID: 5691 (python3)
+      Tasks: 1 (limit: 4626)
+     Memory: 12M (peak: 12.1M)
+        CPU: 84ms
+     CGroup: /system.slice/ehr-sim.service
+             └─5691 /usr/bin/python3 -m http.server 8080 --bind 127.0.0.1
+
+Apr 22 19:53:18 localhost-live systemd[1]: Started ehr-sim.service - Synthetic EHR Support Service.

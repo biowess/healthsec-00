@@ -1,0 +1,50 @@
+○ sshd.service - OpenSSH server daemon
+     Loaded: loaded (/usr/lib/systemd/system/sshd.service; disabled; preset: disabled)
+    Drop-In: /usr/lib/systemd/system/service.d
+             └─10-timeout-abort.conf
+     Active: inactive (dead)
+       Docs: man:sshd(8)
+             man:sshd_config(5)
+
+○ nftables.service - Netfilter Tables
+     Loaded: loaded (/usr/lib/systemd/system/nftables.service; disabled; preset: disabled)
+    Drop-In: /usr/lib/systemd/system/service.d
+             └─10-timeout-abort.conf
+     Active: inactive (dead)
+       Docs: man:nft(8)
+
+● auditd.service - Security Audit Logging Service
+     Loaded: loaded (/usr/lib/systemd/system/auditd.service; enabled; preset: enabled)
+    Drop-In: /usr/lib/systemd/system/service.d
+             └─10-timeout-abort.conf
+     Active: active (running) since Wed 2026-04-22 19:11:16 CET; 44min ago
+ Invocation: c0430863423347a28637bc5269b82b50
+       Docs: man:auditd(8)
+             https://github.com/linux-audit/audit-documentation
+   Main PID: 2217 (auditd)
+      Tasks: 4 (limit: 4626)
+     Memory: 2.7M (peak: 3.2M)
+        CPU: 47ms
+     CGroup: /system.slice/auditd.service
+             ├─2217 /usr/bin/auditd
+             └─2219 /usr/sbin/sedispatch
+
+Apr 22 19:11:16 fedora systemd[1]: Starting auditd.service - Security Audit Logging Service...
+Apr 22 19:11:16 fedora auditd[2217]: audit dispatcher initialized with q_depth=2000 and 1 active plugins
+Apr 22 19:11:16 fedora auditd[2217]: Init complete, auditd 4.1.1 listening for events (startup state enable)
+Apr 22 19:11:16 fedora systemd[1]: Started auditd.service - Security Audit Logging Service.
+
+● ehr-sim.service - Synthetic EHR Support Service
+     Loaded: loaded (/etc/systemd/system/ehr-sim.service; enabled; preset: disabled)
+    Drop-In: /usr/lib/systemd/system/service.d
+             └─10-timeout-abort.conf
+     Active: active (running) since Wed 2026-04-22 19:53:18 CET; 2min 13s ago
+ Invocation: 49bb1e40b27543d7a459d17c381aaffa
+   Main PID: 5691 (python3)
+      Tasks: 1 (limit: 4626)
+     Memory: 11.8M (peak: 12.1M)
+        CPU: 96ms
+     CGroup: /system.slice/ehr-sim.service
+             └─5691 /usr/bin/python3 -m http.server 8080 --bind 127.0.0.1
+
+Apr 22 19:53:18 localhost-live systemd[1]: Started ehr-sim.service - Synthetic EHR Support Service.

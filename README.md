@@ -142,9 +142,9 @@ Prefer lowercase, hyphen-separated filenames.
 
 ## Notes policy
 
-Do **not** publish the raw messy notes as the main story of the repository. Keep them only as an internal reference or move them to `notes/raw-note.txt` with a clear warning.
+I did **not** publish the raw messy notes as the main story of the repository. I kept them only as an internal reference.
 
-Publish a cleaned `notes/troubleshooting-log.md` and `docs/reproduction-guide.md` instead.
+Published a cleaned `notes/troubleshooting-log.md` and `docs/reproduction-guide.md` instead.
 
 ## How to reproduce
 

@@ -1,4 +1,4 @@
-# Troubleshooting Log — Phase 0 Hardening Lab
+# Troubleshooting Log: Phase 0 Hardening Lab
 
 This document captures the issues encountered while building the Phase 0 cybersecurity lab and the fixes that resolved them. It is written for clarity and reproducibility, while preserving the actual troubleshooting path.
 

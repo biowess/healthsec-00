@@ -109,10 +109,7 @@ healthsec-phase0/
 │   ├── 10-phase0-hardening.conf
 │   └── nftables.conf
 ├── notes/
-│   ├── raw-note.txt
 │   └── troubleshooting-log.md
-├── scripts/
-│   └── (optional helper scripts only)
 └── assets/
     ├── diagrams/
     └── charts/

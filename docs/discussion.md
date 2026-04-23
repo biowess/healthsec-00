@@ -2,7 +2,7 @@
 
 ### Interpretation of the Lynis Score Stability
 
-The unchanged Lynis Hardening Index of 70 should not be interpreted as evidence that hardening had no effect. The score is computed across a broad range of controls, many of which were intentionally deferred to later phases. The controls addressed in Phase 0 — SSH hardening, firewall, AIDE, and basic auditd — constitute a meaningful foundational layer but represent only a fraction of Lynis’s full test catalog. The more meaningful Lynis indicator for Phase 0 is the elimination of the sole pre-hardening warning. The increase in suggestion count from 27 to 33 is not a regression; the six new SSH-7408 suggestions appeared because Lynis now found a running SSH daemon to evaluate.
+The unchanged Lynis Hardening Index of 70 should not be interpreted as evidence that hardening had no effect. The score is computed across a broad range of controls, many of which were intentionally deferred to later phases. The controls addressed in Phase 0. SSH hardening, firewall, AIDE, and basic auditd constitute a meaningful foundational layer but represent only a fraction of Lynis’s full test catalog. The more meaningful Lynis indicator for Phase 0 is the elimination of the sole pre-hardening warning. The increase in suggestion count from 27 to 33 is not a regression; the six new SSH-7408 suggestions appeared because Lynis now found a running SSH daemon to evaluate.
 
 ### Significance of the AIDE Results
 
